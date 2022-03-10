@@ -1157,6 +1157,7 @@ public class MixpanelAPI {
      */
     public interface People {
         /**
+         * @deprecated in 6.2.0
          * NOTE: This method is deprecated. Please use {@link MixpanelAPI#identify(String)}
          * instead. Associate future calls to {@link #set(JSONObject)}, {@link #increment(Map)},
          * {@link #append(String, Object)}, etc... with a particular People Analytics user.
@@ -1175,6 +1176,7 @@ public class MixpanelAPI {
          *
          * @see MixpanelAPI#identify(String)
          */
+        @Deprecated
         void identify(String distinctId);
 
         /**
